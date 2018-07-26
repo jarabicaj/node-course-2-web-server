@@ -49,7 +49,9 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/joboffers', (req, res) => {
-    res.render('joboffers.hbs')
+    res.render('joboffers.hbs', {
+        pageTitle: "Job Offers"
+    })
 });
 
 app.get('/bad', (req, res) => {
