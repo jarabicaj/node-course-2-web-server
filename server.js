@@ -48,6 +48,10 @@ app.get('/about', (req, res) => {
     })
 });
 
+app.get('/joboffers', (req, res) => {
+    res.render('joboffers.hbs')
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Unable to handle request'
